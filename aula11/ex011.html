@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEROPORTO</title>
+</head>
+<body>
+    <h1>Sistema de Verificação de País</h1>
+    Digite seu pais de origem: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Enviar" onclick="verificar_pais()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        
+        function verificar_pais() {
+            var res = document.querySelector('div#res')
+            var pais = document.querySelector('input#txtpais').value
+            if (pais == 'Brasil') {
+                res.innerHTML = `<p>Você é Brasileiro!</p>`
+            } else {
+                res.innerHTML += `<p>Você é Estrangeiro!</p>`
+            }
+        }
+    </script>
+
+</body>
+</html>
