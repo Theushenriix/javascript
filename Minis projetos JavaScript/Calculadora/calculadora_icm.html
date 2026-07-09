@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadore ICM</title>
+    <link href="src/output.css"rel="stylesheet">
+    
+    
+</head>
+<body class="min-h-screen flex items-center justify-center ">
+    <div id="card" class="bg-amber-400 w-md flex-col p-10 rounded-3xl fl">
+
+        <h1 class="mb-2 font-black text-2xl w-full ">Calculadora - IMC</h1>
+        <div class="h-0.5 bg-black mb-2.5"></div>
+
+        <div id="info_pessoa" class="space-y-2 max-w-fUll">
+
+            <p class="max-w-full">Nome:</p>
+            <input type="text" name="nome" id="nome" class="bg-white w-full py-2 rounded-xl p-2">
+
+            <p>Altura:</p>
+            <input type="number" name="altura" id="altura" class="bg-white w-full py-2 rounded-xl p-2">
+
+            <p>Peso:</p>
+            <input type="number" name="peso" id="peso" class="bg-white w-full py-2 rounded-xl p-2">
+            
+
+            <button id="calcular" class="bg-black text-white py-2 w-full rounded-xl cursor-pointer">Calcular</button>
+
+            <div id="resultado" class="w-full h-30 bg-black rounded-2xl text-white p-3 flex items-center"></div>
+        </div>
+    </div>
+
+    <script src="imc.js"></script>
+</body>
+</html>
